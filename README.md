@@ -7,6 +7,8 @@
 
 ## REST API 使用說明
 
+![後台顯示位置](01.jpg)
+
 ```
 /api/v1/contrib/opacblock/block/{location}?lang={lang}&library_id={library_id}
 ```
@@ -24,12 +26,26 @@
 /api/v1/contrib/opacblock/block/OpacMainUserBlock
 ```
 
-```
-/api/v1/contrib/opacblock/block/OpacMainUserBlock?lang=zh-Hant-TW&library_id=CPL
-```
+傳回結果:
 
-![後台顯示位置](01.jpg)
-
+```
+{
+  "count": 1,
+  "items": [
+    {
+      "branchcode": null,
+      "code": "OpacMainUserBlock_11",
+      "content": "\u003Ch2\u003E歡迎使用圖書館\u003C/h2\u003E\r\n\u003Cp\u003E歡迎來到本館線上圖書館，可以搜尋圖書、查看借閱資訊及最新消息。\u003C/p\u003E",
+      "id": 11,
+      "lang": "default",
+      "number": null,
+      "published_on": "2026-09-15",
+      "title": "歡迎使用圖書館"
+    }
+  ],
+  "location": "OpacMainUserBlock"
+}
+```
 
 
 
